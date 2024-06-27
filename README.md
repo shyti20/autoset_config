@@ -60,5 +60,5 @@ Autoset_config is a useful tool for automating the management of configuration f
 ### Notes
 
 * Make sure to replace `https://git-scm.com/book/en/Customizing-Git-Git-Configuration` with the actual URL of the GitHub repository.
-* It is recommended to read the official [Rust](https://doc.rust-lang.org/stable/) and [Bash](https://www.gnu.org/software/bash/man/html/index.html)
+* It is recommended to read the official [Rust](https://doc.rust-lang.org/stable/book/index.html) and [Bash](https://devdocs.io/bash/)
  documentation for more information on how to use these languages.
