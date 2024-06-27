@@ -57,11 +57,6 @@ Autoset_config's configuration options can be modified in the `settings.ini` fil
 
 Autoset_config is a useful tool for automating the management of configuration files, simplifying the process of configuring software and systems. Its simple interface and flexible configuration options make it suitable for users of all experience levels.
 
-### Notes
-
-* Make sure to replace `https://git-scm.com/book/en/Customizing-Git-Git-Configuration` with the actual URL of the GitHub repository.
-* It is recommended to read the official [Rust](https://doc.rust-lang.org/stable/book/index.html) and [Bash](https://devdocs.io/bash/)
- documentation for more information on how to use these languages.
 
 
 ## **User Notes:**
