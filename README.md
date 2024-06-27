@@ -62,3 +62,41 @@ Autoset_config is a useful tool for automating the management of configuration f
 * Make sure to replace `https://git-scm.com/book/en/Customizing-Git-Git-Configuration` with the actual URL of the GitHub repository.
 * It is recommended to read the official [Rust](https://doc.rust-lang.org/stable/book/index.html) and [Bash](https://devdocs.io/bash/)
  documentation for more information on how to use these languages.
+
+
+## **User Notes:**
+
+**1. Make sure you clone the correct repository:**
+
+Ensure you clone the correct repository from the following URL: [https://github.com/shyti20/autoset_config/](https://github.com/shyti20/autoset_config/)
+
+**2. Modify the URL of your GitHub repository in the `settings.ini` file:**
+
+Open the `settings.ini` file located in the `Autoset_config` folder. Replace the URL `https://your-github-username.github.io/your-repo-name` with the URL of your GitHub repository.
+
+**3. Modify the paths of all parameters required for execution. If a parameter is not needed, simply leave a hyphen (`-`).**
+
+**Example:**
+
+```
+[General]
+github_url = https://your-github-username.github.io/your-repo-name
+
+[Source]
+path = /path/to/source/files
+
+[Destination]
+path = /path/to/destination/files
+
+[Backup]
+path = /path/to/backup/files
+```
+
+**Additional notes:**
+
+* Make sure to use the correct syntax for configuration options.
+* If you are unsure about any of the configuration options, please refer to the program's documentation.
+* You can always add additional configuration options as needed.
+
+**By following these notes, you can ensure that your Autoset_config program is running smoothly and efficiently.**
+
