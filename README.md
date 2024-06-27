@@ -37,8 +37,8 @@ sudo dnf install rust
 Once Rust is installed, you can clone the Autoset_config repository and run the program:
 
 ```bash
-git clone https://git-scm.com/book/en/Customizing-Git-Git-Configuration
-cd Autoset_config
+git clone https://github.com/shyti20/autoset_config/edit/rust_bash/
+cd autoset_config
 cargo build
 cargo run
 ```
