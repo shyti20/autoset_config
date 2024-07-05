@@ -75,17 +75,21 @@ Open the `settings.ini` file located in the `Autoset_config` folder. Replace the
 **Example:**
 
 ```
-[General]
-github_url = https://your-github-username.github.io/your-repo-name
+[repos]
+conf_repo = https://github.com/user/repo.git
+path_repo = ~/repo_download/this_repo    
 
-[Source]
-path = /path/to/source/files
+[files]
+rofi_conf = ~/my_dir/file                                                                                                  
+waybar_conf =  ~/my_dir/file                                
+alacritty_conf =  ~/my_dir/file                             
+hyprconf = ~/my_dir/file   
 
-[Destination]
-path = /path/to/destination/files
-
-[Backup]
-path = /path/to/backup/files
+[path]            
+rofi_path = ~/my_dir/
+waybar_path = ~/my_dir/
+alacritty_path = ~/my_dir/
+hypr_path = ~/my_dir/
 ```
 
 **Additional notes:**
