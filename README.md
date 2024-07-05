@@ -1,3 +1,4 @@
+**This repository is still under development and testing. It is not yet ready for public use.**
 ## Autoset_config: Hybrid Rust and Bash Version
 
 ### Introduction
