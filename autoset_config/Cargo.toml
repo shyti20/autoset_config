@@ -1,0 +1,12 @@
+[package]
+name = "autoset_config"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+app = "0.6.5"
+arg = "0.4.1"
+clap = "^2.22"  # Update the version specifier (e.g., "^2.27")
+rust-ini = "0.21.0"
+
+autoset_confi_lib = { path = "autoset_confi_lib" }
