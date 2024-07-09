@@ -53,10 +53,8 @@ To run your compiled Rust program as a terminal command, follow these steps:
 
 1. **Compile the Program**
 
-   Replace `il_tuo_programma.rs` with the name of your Rust file and `nome_del_comando` with the desired command name:
-
    ```bash
-   rustc il_tuo_programma.rs -o nome_del_comando
+   rustc main.rs -o autoset
    ```
 
 2. **Move the Executable**
@@ -64,14 +62,14 @@ To run your compiled Rust program as a terminal command, follow these steps:
    For a global setup (requires superuser permissions):
 
    ```bash
-   sudo mv nome_del_comando /usr/local/bin
+   sudo mv autoset /usr/local/bin
    ```
 
    For a local setup (no superuser permissions required):
 
    ```bash
    mkdir -p $HOME/.local/bin
-   mv nome_del_comando $HOME/.local/bin
+   mv autoset $HOME/.local/bin
    ```
 
 3. **Update PATH**
@@ -94,7 +92,7 @@ To run your compiled Rust program as a terminal command, follow these steps:
    Now you can run your program with:
 
    ```bash
-   nome_del_comando
+   autoset
    ```
 
 ## Configuration Options
