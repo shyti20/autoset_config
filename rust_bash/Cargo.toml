@@ -1,7 +1,0 @@
-[package]
-name = "rust_bash"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-ini = "0.15"
