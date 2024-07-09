@@ -97,10 +97,6 @@ To run your compiled Rust program as a terminal command, follow these steps:
    nome_del_comando
    ```
 
-## Execution
-
-To run Autoset_config, simply run the `cargo run` command from the program's folder. The program will present a menu with the three feature options to choose from. Selecting an option will cause the program to perform the corresponding operation.
-
 ## Configuration Options
 
 Autoset_config's configuration options can be modified in the `settings.ini` file located in the program's folder. In this file, you can change the paths to the source and destination folders, the backup folder, and the functionality to use.
