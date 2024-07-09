@@ -54,7 +54,7 @@ To run your compiled Rust program as a terminal command, follow these steps:
 1. **Compile the Program**
 
    ```bash
-   rustc main.rs -o autoset
+   rustc main.rs -o autoset-config
    ```
 
 2. **Move the Executable**
@@ -69,7 +69,7 @@ To run your compiled Rust program as a terminal command, follow these steps:
 
    ```bash
    mkdir -p $HOME/.local/bin
-   mv autoset $HOME/.local/bin
+   mv autoset-config $HOME/.local/bin
    ```
 
 3. **Update PATH**
@@ -92,7 +92,7 @@ To run your compiled Rust program as a terminal command, follow these steps:
    Now you can run your program with:
 
    ```bash
-   autoset
+   autoset-config
    ```
 
 ## Configuration Options
