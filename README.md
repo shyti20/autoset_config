@@ -93,6 +93,7 @@ To run your compiled Rust program as a terminal command, follow these steps:
    autoset-config  -- --number [1 OR 2]
    ```
 * `[1 OR 2]`: This is a placeholder for the user to enter either `1` to perform automatic insertion only, or `2` to perform insertion with backup.
+
 ## Configuration Options
 
 Autoset_config's configuration options can be modified in the `settings.ini` file located in the program's folder. In this file, you can change the paths to the source and destination folders, the backup folder, and the functionality to use.
