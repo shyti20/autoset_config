@@ -1,7 +1,8 @@
-**This repository is still under development and testing. It is not yet ready for public use.**
-## Autoset_config: Hybrid Rust and Bash Version
+# Autoset_config: Hybrid Rust and Bash Version
 
-### Introduction
+**This repository is still under development and testing. It is not yet ready for public use.**
+
+## Introduction
 
 Autoset_config is a program written in Rust with some Bash additions that allows you to automate the management of configuration files. The program allows you to clone a GitHub repository containing the configuration files and choose between three functionalities:
 
@@ -13,7 +14,7 @@ Autoset_config is a program written in Rust with some Bash additions that allows
 
 All information about the program and its settings is saved in a modifiable .ini file.
 
-### Installation
+## Installation
 
 Installing Autoset_config is simple and only requires the installation of the Rust compiler. Here are the installation steps for different Linux distributions:
 
@@ -46,31 +47,75 @@ cargo run
 
 Alternatively, you can run the executable file directly from the `~/auto_config_rust_bash/target/debug/` folder.
 
-### Execution
+### Running the Program as a Terminal Command
+
+To run your compiled Rust program as a terminal command, follow these steps:
+
+1. **Compile the Program**
+
+   Replace `il_tuo_programma.rs` with the name of your Rust file and `nome_del_comando` with the desired command name:
+
+   ```bash
+   rustc il_tuo_programma.rs -o nome_del_comando
+   ```
+
+2. **Move the Executable**
+
+   For a global setup (requires superuser permissions):
+
+   ```bash
+   sudo mv nome_del_comando /usr/local/bin
+   ```
+
+   For a local setup (no superuser permissions required):
+
+   ```bash
+   mkdir -p $HOME/.local/bin
+   mv nome_del_comando $HOME/.local/bin
+   ```
+
+3. **Update PATH**
+
+   Ensure `$HOME/.local/bin` is in your PATH. Check your PATH with:
+
+   ```bash
+   echo $PATH
+   ```
+
+   If `$HOME/.local/bin` is not in your PATH, add it by editing `.bashrc` (or `.zshrc` if using zsh):
+
+   ```bash
+   echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
+   source ~/.bashrc
+   ```
+
+4. **Execute the Command**
+
+   Now you can run your program with:
+
+   ```bash
+   nome_del_comando
+   ```
+
+## Execution
 
 To run Autoset_config, simply run the `cargo run` command from the program's folder. The program will present a menu with the three feature options to choose from. Selecting an option will cause the program to perform the corresponding operation.
 
-### Configuration Options
+## Configuration Options
 
 Autoset_config's configuration options can be modified in the `settings.ini` file located in the program's folder. In this file, you can change the paths to the source and destination folders, the backup folder, and the functionality to use.
 
-### Conclusion
+## User Notes
 
-Autoset_config is a useful tool for automating the management of configuration files, simplifying the process of configuring software and systems. Its simple interface and flexible configuration options make it suitable for users of all experience levels.
+1. **Make sure you clone the correct repository:**
 
+   Ensure you clone the correct repository from the following URL: [https://github.com/shyti20/autoset_config/](https://github.com/shyti20/autoset_config/)
 
+2. **Modify the URL of your GitHub repository in the `settings.ini` file:**
 
-## **User Notes:**
+   Open the `settings.ini` file located in the `Autoset_config` folder. Replace the URL `https://your-github-username.github.io/your-repo-name` with the URL of your GitHub repository.
 
-**1. Make sure you clone the correct repository:**
-
-Ensure you clone the correct repository from the following URL: [https://github.com/shyti20/autoset_config/](https://github.com/shyti20/autoset_config/)
-
-**2. Modify the URL of your GitHub repository in the `settings.ini` file:**
-
-Open the `settings.ini` file located in the `Autoset_config` folder. Replace the URL `https://your-github-username.github.io/your-repo-name` with the URL of your GitHub repository.
-
-**3. Modify the paths of all parameters required for execution. If a parameter is not needed, simply leave a hyphen (`-`).**
+3. **Modify the paths of all parameters required for execution. If a parameter is not needed, simply leave a hyphen (`-`).**
 
 **Example:**
 
@@ -98,5 +143,8 @@ hypr_path = ~/my_dir/
 * If you are unsure about any of the configuration options, please refer to the program's documentation.
 * You can always add additional configuration options as needed.
 
-**By following these notes, you can ensure that your Autoset_config program is running smoothly and efficiently.**
+By following these notes, you can ensure that your Autoset_config program is running smoothly and efficiently.
 
+## Conclusion
+
+Autoset_config is a useful tool for automating the management of configuration files, simplifying the process of configuring software and systems. Its simple interface and flexible configuration options make it suitable for users of all experience levels.
