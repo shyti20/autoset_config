@@ -4,13 +4,11 @@
 
 ## Introduction
 
-Autoset_config is a program written in Rust with some Bash additions that allows you to automate the management of configuration files. The program allows you to clone a GitHub repository containing the configuration files and choose between three functionalities:
+Autoset_config is a program written in Rust with some Bash additions that allows you to automate the management of configuration files. The program allows you to clone a GitHub repository containing the configuration files and choose between two functionalities:
 
 **1. Automatically insert configuration files into the appropriate folders:** This feature automatically copies the configuration files from the source folders to the destination folders specified in the configuration file.
 
-**2. Save configuration files to a specific folder:** This feature moves existing configuration files from their current location to a backup folder specified in the configuration file.
-
-**3. Automatically insert configuration files and save old configurations:** This feature combines features 1 and 2, copying new configuration files to the destination folders and moving old configurations to the backup folder.
+**2. Automatically insert configuration files and save old configurations:** This feature combines features 1 and 2, copying new configuration files to the destination folders and moving old configurations to the backup folder.
 
 All information about the program and its settings is saved in a modifiable .ini file.
 
